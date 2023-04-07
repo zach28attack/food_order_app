@@ -1,7 +1,14 @@
-import "./App.css";
-
+import Header from "./Components/Layout/Header.jsx";
+import Meals from "./Components/Meals/Meals.jsx";
 function App() {
-  return <div>We Lit</div>;
+  return (
+    <div>
+      <Header />
+      <main>
+        <Meals />
+      </main>
+    </div>
+  );
 }
 
 export default App;
