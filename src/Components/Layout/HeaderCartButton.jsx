@@ -2,9 +2,13 @@ import React from "react";
 import CardIcon from "../Cart/CartIcon.jsx";
 import "./HeaderCartButton.css";
 
-const HeaderCartButton = () => {
+const HeaderCartButton = (props) => {
+  const buttonClickHandler = () => {
+    props.onShowCart();
+  };
+
   return (
-    <button className="button">
+    <button className="button" onClick={buttonClickHandler}>
       <span className="icon">
         <CardIcon />
       </span>

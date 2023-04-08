@@ -41,8 +41,6 @@ const AvailableMeals = () => {
     );
   });
 
-  console.log(mealsList);
-
   return (
     <section className="meals">
       <Card>
